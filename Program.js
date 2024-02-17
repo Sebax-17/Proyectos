@@ -9,7 +9,7 @@ let ImpTotalFlete = 0;
 
 for (let i = 0; i < cantidadProductos; i++) {
     const numeroEmpaque = readlineSync.question(`Ingrese el número del empaque ${i + 1}: `);
-    
+   //error mejor utilizar while do 
     if (numeroEmpaque < 1 || numeroEmpaque > 3) {
         console.error("El número de empaque no es válido");
         continue;
