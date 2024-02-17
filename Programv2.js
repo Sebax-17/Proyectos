@@ -17,8 +17,8 @@ rli.on(`line`, (linea)=>{
     const descripcion = valoresLinea[0];
     const ancho = valoresLinea[1];
     const alto = valoresLinea[2];
-    const pronfundida = valoresLinea[3];
-    const dimenciones = alto * ancho * profundidad;
+    const pronfundidad = valoresLinea[3];
+    const dimenciones = alto * ancho * pronfundidad;
     console.info({dimenciones});
     let costoTransportProducto = dimenciones * 100;
     console.info({costoTransportProducto});
